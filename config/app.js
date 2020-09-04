@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-app.get("/", (req, res) => {
-    return res.status(201).send({ Hello: 'World!' })
-})
+const sessionRoutes = require('../src/routes/sessions')
+
+app.use('/session', sessionRoutes)
 
 module.exports = app
