@@ -1,5 +1,4 @@
 const watson = require('../../config/watson');
-const sessionController = require('./sessionController')
 
 const firstMessage = async (req, res, next) => {
     await watson.assistant_instance.createSession(
