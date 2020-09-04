@@ -3,7 +3,7 @@ const router = Router()
 
 const conversationController = require('../controllers/conversationController')
 
-router.post('/', conversationController.start_conversation)
-router.post('/:sessionId', conversationController.continue_conversation)
+router.post('/', conversationController.startConversation)
+router.post('/:sessionId', conversationController.continueConversation)
 
 module.exports = router
